@@ -1,4 +1,4 @@
-interface Animal {
+export interface Animal {
   name: string;
   canEat: boolean;
   canDrink: boolean;
