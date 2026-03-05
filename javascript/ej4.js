@@ -15,7 +15,7 @@ class User {
   }
 }
 //cambio const por var para poder redeclarar la variable y elimino el user duplicado
-var user = new User("Pedro", "Sánchez", 45, "Barro man", 1000);
+user = new User("Pedro", "Sánchez", 45, "Barro man", 1000);
 
 console.log(nombreUsuario(user));
 
@@ -41,15 +41,14 @@ console.log(userData(user));
 
 /* Tercer código
 Si el usuario tiene 30 años y no es español, recibirá una ayuda del gobierno de 2000€ */
-var user = new User("Álvaro", "Morón", 30, "Barro man", null, "Morocco");
+user = new User("Álvaro", "Morón", 30, "Barro man", null, "Morocco");
 
 function esExtrangero(user) {
   if (user.nationality != "España" && user.age == 30) {
     //cambio la anidacion de ifs y lo comparo con and ya que necesita cumplir ambas condiciones
     return "Apto para la ayuda del gobierno";
-  } else {
-    return "No es apto para la ayuda del gobierno";
   }
+  return "No es apto para la ayuda del gobierno";
 }
 
 console.log(esExtrangero(user));
