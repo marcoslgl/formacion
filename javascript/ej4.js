@@ -3,52 +3,45 @@ Dado los siguientes códigos, refactorízalos como consideres, si consideras que
 
 Primer código
 Tenemos una función que saca el nombre completo del usuario con el nombre y apellido */
-
-const usuario = {
-  //cambio var por const ya que no se va a modificar
-  name: "Pedro",
-  last: "Sánchez",
-  age: 45,
-  profession: "Barro man",
+//creo la clase user para normalizar el codigo
+class User {
   //normalizo todo al ingles para que sea todo el codigo igual
-};
+  constructor(name, last, age, profession, salary) {
+    this.name = name;
+    this.last = last;
+    this.age = age;
+    this.profession = profession;
+    this.salary = salary;
+  }
+}
+//cambio const por var para poder redeclarar la variable y elimino el user duplicado
+var user = new User("Pedro", "Sánchez", 45, "Barro man", 1000);
 
-console.log("me llamo " + nombreUsuario(usuario));
+console.log(nombreUsuario(user));
 
+//simplifico la funcion
 function nombreUsuario(user) {
-  return `${user.name} ${user.last}`;
+  return `me llamo ${user.name} ${user.last}`;
 }
 
 /* Segundo código
 Tenemos una función que calcula el salario anual y el nombre del usuario */
-var user = {
-  //cambio const por var para poder redeclarar la variable
-  name: "Pedro",
-  last: "Sánchez",
-  age: 45,
-  salary: 1000,
-  profession: "Barro man",
-};
+
 //teniendo ya la funcion nombreUsuario la reutilizo para no repetir codigo y creo la funcion para sacar el salario anual
 function annualSalary(user) {
-  return user.salary * 12;
+  return `cobro ${user.salary * 12}€ al año`;
 }
 
+//creo la funcion userData que unifica las otras dos para evitar repeticion de codigo
 const userData = (user) => {
-  return `me llamo ${nombreUsuario(user)} y cobro ${annualSalary(user)}€ al año`;
+  return `${nombreUsuario(user)} y ${annualSalary(user)}`;
 };
 
 console.log(userData(user));
 
 /* Tercer código
 Si el usuario tiene 30 años y no es español, recibirá una ayuda del gobierno de 2000€ */
-var user = {
-  //cambio const por var para poder redeclarar la variable
-  name: "Álvaro",
-  last: "Morón",
-  age: 30,
-  nationality: "Morocco",
-};
+var user = new User("Álvaro", "Morón", 30, "Barro man", null, "Morocco");
 
 function esExtrangero(user) {
   if (user.nationality != "España" && user.age == 30) {
