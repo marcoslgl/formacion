@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+  </head>
+  <body>
+    <main>
+      <h1>Formulario de Registro</h1>
+      <form action="#" method="POST" target="_blank" novalidate>
+        <div>
+          <label for="firstName">Nombre:</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+            maxlength="50"
+            placeholder="Tu nombre"
+            aria-required="true"
+          />
+        </div>
+        <div>
+          <label for="lastName">Apellido:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+            maxlength="50"
+            placeholder="Tu apellido"
+            aria-required="true"
+          />
+        </div>
+        <div>
+          <label for="age">Edad:</label>
+          <input type="number" id="age" name="age" required min="18" max="120" placeholder="18" aria-required="true" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            maxlength="100"
+            placeholder="tu.email@ejemplo.com"
+            aria-required="true"
+          />
+        </div>
+        <fieldset>
+          <legend>¿Acepta los terminos?</legend>
+          <div>
+            <input type="radio" id="radioYes" name="radio" value="yes" required />
+            <label for="radioYes">acepto</label>
+          </div>
+          <div>
+            <input type="radio" id="radioNo" name="radio" value="no" />
+            <label for="radioNo">no acepto</label>
+          </div>
+        </fieldset>
+        <div>
+          <input type="checkbox" id="agreeCheckbox" name="agreeCheckbox" value="agreed" required aria-required="true" />
+          <label for="agreeCheckbox">Acepto los terminos y condiciones</label>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
