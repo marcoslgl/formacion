@@ -1,8 +1,8 @@
 import { Animal } from "./ej1";
-interface Dog extends Animal {
+type Dog = Animal & {
   race: "Husky" | "Labrador" | "Chucho";
   age: number;
-}
+};
 const dog: Dog = {
   name: "Perro",
   canEat: true,
