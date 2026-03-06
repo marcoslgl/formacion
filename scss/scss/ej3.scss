@@ -1,0 +1,29 @@
+.card {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &__header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  &__body {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 16px;
+  }
+
+  &__footer {
+    text-align: right;
+
+    &--highlighted {
+      color: #007bff;
+      font-weight: bold;
+    }
+  }
+}
