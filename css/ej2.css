@@ -1,0 +1,65 @@
+/* Reset CSS simplificado */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  font-size: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+blockquote,
+i,
+b,
+u,
+em {
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  hyphens: auto;
+  color: inherit;
+}
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  appearance: none;
+}
