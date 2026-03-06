@@ -1,0 +1,32 @@
+@mixin flex-container($direction: row, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.head {
+  @include flex-container(row, center, center);
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border: 1px solid #bbb;
+  border-radius: 1.5rem;
+}
+
+.content {
+  @include flex-container(row, center, center);
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.list {
+  @include flex-container(column, flex-start, center);
+  margin-top: 1rem;
+  width: fit-content;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border: 1px solid #bbb;
+  border-radius: 1rem;
+}
