@@ -6,10 +6,10 @@ export interface Animal {
   canFly: boolean;
 }
 
-interface Dog extends Animal {
+type Dog = Animal & {
   race: string;
   age: number;
-}
+};
 
 const bird: Animal = {
   name: "Pájaro",

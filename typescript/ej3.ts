@@ -1,8 +1,8 @@
 import { Animal } from "./ej1";
 
-interface Cat extends Omit<Animal, "canEat" | "canDrink" | "canFly"> {
+type Cat = Omit<Animal, "canEat" | "canDrink" | "canFly"> & {
   color: string;
-}
+};
 
 const cat: Cat = {
   name: "Gato",
@@ -11,7 +11,7 @@ const cat: Cat = {
 };
 console.log(cat);
 
-interface snake extends Omit<Animal, "name" | "canFly"> {}
+type snake = Omit<Animal, "name" | "canFly">;
 
 const snake: snake = {
   canEat: true,
