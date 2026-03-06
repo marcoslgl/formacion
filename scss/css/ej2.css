@@ -1,0 +1,36 @@
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border: 1px solid #bbb;
+  border-radius: 1.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+  width: fit-content;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border: 1px solid #bbb;
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=ej2.css.map */
