@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_events_study_materials",
+  "info": {
+    "displayName": "StudyMaterial"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "video",
+        "document",
+        "presentation",
+        "link"
+      ]
+    }
+  },
+  "config": {}
+}
