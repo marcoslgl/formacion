@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_details_class_details",
+  "info": {
+    "displayName": "ClassDetails"
+  },
+  "options": {},
+  "attributes": {
+    "schedule": {
+      "type": "time"
+    },
+    "classRoom": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

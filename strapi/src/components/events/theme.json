@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_events_themes",
+  "info": {
+    "displayName": "Theme"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Subthemes": {
+      "type": "component",
+      "component": "events.subtheme",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
