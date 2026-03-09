@@ -81,6 +81,19 @@
       },
       "component": "events.study-material",
       "repeatable": true
+    },
+    "PageContent": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "dynamic-content.rich-text",
+        "dynamic-content.link-list",
+        "dynamic-content.gallery"
+      ]
     }
   }
 }

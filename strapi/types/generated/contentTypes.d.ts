@@ -494,6 +494,18 @@ export interface ApiEventEvent extends Struct.CollectionTypeSchema {
       }>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::event.event'>;
+    PageContent: Schema.Attribute.DynamicZone<
+      [
+        'dynamic-content.rich-text',
+        'dynamic-content.link-list',
+        'dynamic-content.gallery',
+      ]
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     publishedAt: Schema.Attribute.DateTime;
     StudyMaterials: Schema.Attribute.Component<'events.study-material', true> &
       Schema.Attribute.SetPluginOptions<{

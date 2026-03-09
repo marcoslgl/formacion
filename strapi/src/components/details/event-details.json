@@ -6,7 +6,7 @@
   "options": {},
   "attributes": {
     "schedule": {
-      "type": "datetime"
+      "type": "date"
     },
     "place": {
       "type": "string"
