@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_dynamic_content_rich_texts",
+  "info": {
+    "displayName": "RichText"
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_dynamic_content_link_lists",
+  "info": {
+    "displayName": "LinkList"
+  },
+  "options": {},
+  "attributes": {
+    "Links": {
+      "type": "component",
+      "component": "dynamic-content.link-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
