@@ -5,8 +5,8 @@ definePageMeta({
 </script>
 
 <template>
-  <section class="py-10 px-10 border rounded-lg bg-white shadow-md">
-    <TheTitle prop-title="Page Title" />
+  <section class="py-10 px-10 bg-white rounded-lg shadow-md">
+    <TheTitle>Welcome to My Page</TheTitle>
     <p class="text-lg text-gray-600">This is the main content area of the page.</p>
   </section>
 </template>
