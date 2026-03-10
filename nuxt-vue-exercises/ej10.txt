@@ -1,0 +1,29 @@
+1-¿Qué es un linter?
+Una herramienta para detectar errores de codigo o problemas de estilo antes de que ejecute el codigo
+
+2.¿Qué es Husky?
+Una herramienta que permite ejecutar scripts antes de hacer commits o push para comprobar que cumpla unos requisitos
+
+3.¿Qué es la reactividad?
+Es la capacidad del framework para detectar c y actualizar cambios automaticamente sin tener que recargar la pagina
+
+4.¿Desde dónde hay que crear todas las ramas para los desarrollos?
+Las ramas se deben crear desde main
+
+5.¿Cuándo se puede utilizar la rama main?
+No se debe trabajar nunca sobre ella, ya que es la rama para produccion
+
+6.¿Qué son las custom properties?
+Las custom properties son variables de css
+
+7.Diferencias entre v-if y v-show
+Si no se cumple v-if el elemento no se crea en el dom mientras que v-show si lo crea pero no lo muestra poniendo display:none
+
+8.¿Cuáles son los valores de falsy?
+Valores que se evaluan como falsos ej: 0, false, null, undefined
+
+9.¿Qué es Nullish Coalescing Operator?
+Es un operador parecido al or o || escrito como ?? que a diferencia del or acepta valores vacios ej: 0 o ""
+
+10.¿Para que se utiliza TypeScript?
+Se utiliza para tipar el codigo de javascript para evitar errores de tipo y hacer codigo mas legible
