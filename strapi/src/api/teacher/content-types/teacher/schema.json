@@ -38,6 +38,10 @@
       "type": "component",
       "component": "details.teacher-details",
       "repeatable": true
+    },
+    "numberOfClasses": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
