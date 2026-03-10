@@ -29,6 +29,6 @@
       <slot />
     </main>
 
-    <footer class="p-4 text-center text-sm text-green-600">&copy; 2026 - My project</footer>
+    <footer class="p-4 text-center text-sm text-green-600">Marcos Lopez - My project</footer>
   </div>
 </template>
