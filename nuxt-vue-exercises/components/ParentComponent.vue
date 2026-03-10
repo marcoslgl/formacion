@@ -1,7 +1,12 @@
 <script setup lang="ts">
-const mesageReceived = ref("");
-const manageMesage = (mesaje: string) => {
-  mesageReceived.value = mesaje;
+import { provide, ref } from "vue";
+
+const message = ref("");
+provide("message", message);
+
+const messageReceived = ref("");
+const manageMessage = (message: string) => {
+  messageReceived.value = message;
 };
 </script>
 
@@ -9,9 +14,14 @@ const manageMesage = (mesaje: string) => {
   <div class="py-10 px-10 bg-white rounded-lg shadow-md">
     <TheTitle>Parent Component</TheTitle>
     <p class="text-gray-600 mb-4">This is a parent component. It can receive events from the child component.</p>
-    <ChildComponent @example="manageMesage" />
-    <p v-if="mesageReceived" class="text-gray-600 mt-6">
-      Message received from child: <span class="text-green-600">{{ mesageReceived }}</span>
+    <input
+      v-model="message"
+      class="w-full mb-4 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500 text-gray-700"
+      placeholder="Type a message to provide to child component"
+    />
+    <ChildComponent @example="manageMessage" />
+    <p v-if="messageReceived" class="text-gray-600 mt-6">
+      Message received from child: <span class="text-green-600">{{ messageReceived }}</span>
     </p>
   </div>
 </template>
