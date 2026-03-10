@@ -6,8 +6,11 @@ const isMax = computed(() => count.value >= 10);
 
 <template>
   <TheTitle
-    >Count: <span :class="isMax ? 'text-green-500' : 'text-slate-800'">{{ count }}</span></TheTitle
-  >
+    >Count: <span :class="isMax ? 'text-green-500' : 'text-slate-800'">{{ count }}</span>
+  </TheTitle>
+  <p class="text-gray-600">
+    Double Count: <span>{{ count * 2 }}</span>
+  </p>
   <p class="text-gray-600 mb-4">This is a simple counter component.</p>
 
   <div class="flex items-center space-x-4">
