@@ -9,4 +9,7 @@ definePageMeta({
     <TheTitle>Welcome to My Page</TheTitle>
     <p class="text-lg text-gray-600">This is the main content area of the page.</p>
   </section>
+  <section class="pt-4">
+    <ParentComponent />
+  </section>
 </template>
