@@ -5,6 +5,8 @@ const count = ref(0);
 
 <template>
   <TheTitle>Count: {{ count }}</TheTitle>
+  <p class="text-gray-600 mb-4">This is a simple counter component.</p>
+
   <div class="flex items-center space-x-4">
     <button
       v-if="count > 0"
