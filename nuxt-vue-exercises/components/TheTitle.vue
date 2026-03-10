@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="mb-6">
+  <div>
     <h1 class="text-4xl font-extrabold text-slate-800 tracking-tight">
       <slot>Default Title</slot>
     </h1>

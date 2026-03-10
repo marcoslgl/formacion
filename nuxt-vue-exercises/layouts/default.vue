@@ -1,13 +1,13 @@
-<script setup lang="ts">
-// Aquí irá la lógica global del layout si la necesitas
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <header class="p-4 bg-white shadow-sm">
-      <nav class="container mx-auto">
-        <h1 class="text-xl font-bold text-green-600">Nuxt and Vue exercises</h1>
-      </nav>
+    <header class="h-16 bg-white shadow-sm flex justify-between items-center">
+      <h1 class="ml-4 text-xl font-bold text-green-600">Nuxt and Vue exercises</h1>
+      <div class="flex h-full">
+        <nuxt-link to="/" class="hover:bg-green-200 flex items-center px-4">Home</nuxt-link>
+        <nuxt-link to="/counter" class="hover:bg-green-200 flex items-center px-4">Counter</nuxt-link>
+      </div>
     </header>
 
     <main class="flex-grow container mx-auto p-4">
