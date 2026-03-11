@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #42b883;
+  --secondary: #35495e;
+  --bg-light: #f3f4f6;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-900;
+    background-color: var(--bg-light);
+  }
+
+  h1 {
+    @apply text-3xl font-bold;
+  }
+}
