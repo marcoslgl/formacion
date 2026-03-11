@@ -1,7 +1,22 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { watch, ref } from "vue";
 const { count, increment, decrement, reset } = useCounter();
 const isMax = computed(() => count.value >= 10);
+
+const stateMessage = ref("");
+watch(
+  count,
+  (newValue) => {
+    if (newValue === 0) {
+      stateMessage.value = "Minimum value";
+    } else if (newValue === 10) {
+      stateMessage.value = "Maximum value";
+    } else {
+      stateMessage.value = "Intermedium value";
+    }
+  },
+  { immediate: true },
+);
 </script>
 
 <template>
@@ -11,7 +26,7 @@ const isMax = computed(() => count.value >= 10);
   <p class="text-gray-600">
     Double Count: <span>{{ count * 2 }}</span>
   </p>
-  <p class="text-gray-600 mb-4">This is a simple counter component.</p>
+  <p class="text-gray-600 mb-4">{{ stateMessage }}</p>
 
   <div class="flex items-center space-x-4">
     <button
