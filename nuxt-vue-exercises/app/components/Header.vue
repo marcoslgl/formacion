@@ -19,6 +19,13 @@
       >
         Catalog
       </nuxt-link>
+      <nuxt-link
+        to="/products"
+        class="hover:bg-green-200 flex items-center px-4"
+        active-class="font-bold text-green-600"
+      >
+        Products
+      </nuxt-link>
     </nav>
   </header>
 </template>

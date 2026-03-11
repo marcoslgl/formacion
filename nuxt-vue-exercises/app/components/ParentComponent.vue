@@ -11,7 +11,7 @@ const manageMessage = (message: string) => {
 </script>
 
 <template>
-  <div class="py-10 px-10 bg-white rounded-lg shadow-md">
+  <Card class="border">
     <TheTitle>Parent Component</TheTitle>
     <p class="text-gray-600 mb-4">This is a parent component. It can receive events from the child component.</p>
     <input
@@ -23,5 +23,5 @@ const manageMessage = (message: string) => {
     <p v-if="messageReceived" class="text-gray-600 mt-6">
       Message received from child: <span class="text-green-600">{{ messageReceived }}</span>
     </p>
-  </div>
+  </Card>
 </template>
