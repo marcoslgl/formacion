@@ -26,6 +26,9 @@
       >
         Products
       </nuxt-link>
+      <nuxt-link to="/movies" class="hover:bg-green-200 flex items-center px-4" active-class="font-bold text-green-600">
+        Movies
+      </nuxt-link>
     </nav>
   </header>
 </template>
