@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { mockProducts } from "~/data/mock";
+definePageMeta({
+  layout: "custom",
+});
 const counterStore = useCounterStore();
 </script>
 
