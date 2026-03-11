@@ -14,6 +14,6 @@ defineProps<{
       <h2 class="text-xl font-bold mb-2">{{ product.title }}</h2>
       <p class="text-gray-600 mb-4">{{ product.description }}</p>
     </div>
-    <div class="text-lg font-semibold text-green-600 mt-auto self-end">${{ product.price }}</div>
+    <div class="text-lg font-semibold text-green-600 mt-auto self-end">{{ product.price }}€</div>
   </div>
 </template>
